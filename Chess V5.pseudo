@@ -1,0 +1,158 @@
+// * Code Author: LEH010
+// * Date: 2025/12/08
+// * Description: 
+// * Categories: Other
+
+DECLARE Rows : ARRAY[1:34] OF STRING
+
+PROCEDURE SetUpBoard()
+
+    Rows[1]  ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[2]  ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[3]  ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣   3"
+    Rows[4]  ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[5]  ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[6]  ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[7]  ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣   7"
+    Rows[8]  ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[9]  ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[10] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[11] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣  11"
+    Rows[12] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[13] ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[14] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[15] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣  15"
+    Rows[16] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[17] ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[18] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[19] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣  19"
+    Rows[20] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[21] ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[22] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[23] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣  23"
+    Rows[24] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[25] ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[26] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[27] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣  27"
+    Rows[28] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[29] ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[30] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[31] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣  31"
+    Rows[32] ← "🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣         🁣"
+    Rows[33] ← "🁣🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🀱🁣"
+    Rows[34] ← "     06         16        26         36         46         56        66        76      "
+ENDPROCEDURE
+
+
+FUNCTION ReplaceChar(original : STRING, position : INTEGER, newChar : STRING) RETURNS STRING
+    // Get everything before the target char
+    DECLARE prefix : STRING
+    prefix ← SUBSTRING(original, 1, position - 1)
+    // Get everything after the target char
+    DECLARE suffix : STRING
+    suffix ← SUBSTRING(original, position + 1, LENGTH(original) - position)
+    // Rebuild string with the new char
+    RETURN prefix & newChar & suffix
+ENDFUNCTION
+
+PROCEDURE PlacePawns(CurrentPawnRow : INTEGER, CurrentPiece : STRING)
+    DECLARE PawnPlacementSquare : INTEGER
+            PawnPlacementSquare ← 6
+
+    FOR CurrentPawnCount ← 1 TO 8
+        Rows[CurrentPawnRow] ← ReplaceChar(Rows[CurrentPawnRow], PawnPlacementSquare, CurrentPiece)
+        PawnPlacementSquare ← PawnPlacementSquare + 10   // move to next pawn square
+    NEXT CurrentPawnCount
+    
+ENDPROCEDURE
+
+PROCEDURE StartingPosition()
+
+    
+
+    CALL PlacePawns(7, "p")
+    CALL PlacePawns(27, "P")
+
+    DECLARE CurrentRow : INTEGER
+            CurrentRow ← 31
+    //White
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 6, "R")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 76, "R")
+
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 16, "N")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 66, "N")
+
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 26, "B")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 56, "B")
+
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 36, "Q")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 46, "K")
+
+    //Black
+    CurrentRow ← 3
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 6, "r")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 76, "r")
+
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 16, "n")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 66, "n")
+
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 26, "b")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 56, "b")
+
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 36, "q")
+    Rows[CurrentRow] ← ReplaceChar(Rows[CurrentRow], 46, "k")
+
+ENDPROCEDURE
+
+
+CALL SetUpBoard()
+CALL StartingPosition()
+
+
+TYPE MoveFundamentals
+    DECLARE FromRow : INTEGER
+    DECLARE FromColumn : INTEGER
+    DECLARE ToRow_ : INTEGER
+    DECLARE ToColumn : INTEGER
+    DECLARE PieceName : STRING
+ENDTYPE
+
+DECLARE WhitePlayed : BOOLEAN
+DECLARE CurrentMove : MoveFundamentals
+DECLARE MoveFrom : INTEGER
+
+
+PROCEDURE MakeMove(FrROW_ : INTEGER, FrCOLUMN_ : INTEGER, ToROW_ : INTEGER, ToCOLUMN_ : INTEGER, Piece_ : STRING)
+    DECLARE TempPiece : STRING
+            IF NOT WhitePlayed THEN
+                TempPiece ← TO_UPPER(Piece_)
+                WhitePlayed ← TRUE
+            ELSE
+                TempPiece ← TO_LOWER(Piece_)
+                WhitePlayed ← FALSE
+            ENDIF
+    Rows[FrROW_] ← ReplaceChar(Rows[FrROW_], FrCOLUMN_, " ")
+    Rows[ToROW_] ← ReplaceChar(Rows[ToROW_], ToCOLUMN_, TempPiece)
+
+ENDPROCEDURE
+
+WHILE TRUE DO
+    FOR Count ← 1 TO 34
+        OUTPUT Rows[Count]
+    NEXT Count
+    OUTPUT ""
+
+    OUTPUT "What Row is your Piece Moving From?"
+    INPUT CurrentMove.FromRow
+    OUTPUT "What Column is your Piece Moving From?"
+    INPUT CurrentMove.FromColumn
+    OUTPUT "Which Row Is Your Piece Moving To?"
+    INPUT CurrentMove.ToRow_
+    OUTPUT "Which Column Is Your Piece Moving To?"
+    INPUT CurrentMove.ToColumn
+    OUTPUT "What Is Your Piece?"
+    INPUT CurrentMove.PieceName
+
+    CALL MakeMove(CurrentMove.FromRow, CurrentMove.FromColumn, CurrentMove.ToRow_,   CurrentMove.ToColumn, CurrentMove.PieceName)
+    WAIT(40)
+ENDWHILE
